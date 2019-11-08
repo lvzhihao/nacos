@@ -1,0 +1,37 @@
+{
+    "name": "lvzhihao/nacos",
+    "description": "php nacos sdk",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "EDwin",
+            "email": "edwin.lzh@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.2",
+        "guzzlehttp/guzzle": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lvzhihao\\Nacos\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\Nacos\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "malukenho/docheader": "^0.1.7",
+        "mockery/mockery": "^1.2",
+        "phpunit/phpunit": "^8.4",
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "monolog/monolog": "^2.0"
+    },
+    "scripts": {
+        "cs-fix": "php-cs-fixer fix $1",
+        "test": "phpunit --colors=always"
+    }
+}
